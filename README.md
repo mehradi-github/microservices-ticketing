@@ -2,6 +2,7 @@
 - [Microservices with Node JS and React](#microservices-with-node-js-and-react)
   - [Adding a Submodule](#adding-a-submodule)
   - [Remote development over SSH](#remote-development-over-ssh)
+  - [skaffold](#skaffold)
   
 ## Adding a Submodule
 
@@ -30,4 +31,12 @@ Creating and connecting to a virtual machine (VM) via the Visual Studio Code Rem
 ```sh
 # sudo systemctl restart sshd.service
 # ssh -i C:\Users\Developer/.ssh/id_rsa <USER>@<><IP>
+```
+
+## skaffold
+[Skaffold](https://skaffold.dev/docs/quickstart/) handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most: writing code.
+```sh
+skaffold init --skip-build
+skaffold dev
+# skaffold run
 ```
