@@ -1,6 +1,7 @@
 # Microservices with Node JS and React
 - [Microservices with Node JS and React](#microservices-with-node-js-and-react)
   - [Adding a Submodule](#adding-a-submodule)
+  - [Remote development over SSH](#remote-development-over-ssh)
   
 ## Adding a Submodule
 
@@ -23,4 +24,10 @@ git rm <submodule_directory>
 rm -rf .git/modules/<submodule_directory>
 git commit -m"Removed Submodule"
 git push
+```
+## Remote development over SSH
+Creating and connecting to a virtual machine (VM) via the Visual Studio Code Remote - [SSH extension](https://code.visualstudio.com/docs/remote/ssh-tutorial). 
+```sh
+# sudo systemctl restart sshd.service
+# ssh -i C:\Users\Developer/.ssh/id_rsa <USER>@<><IP>
 ```
