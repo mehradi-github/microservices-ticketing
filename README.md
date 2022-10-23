@@ -12,5 +12,15 @@ git submodule update --init --recursive
 # Clone command to ensure you download everything, including any submodules
 git clone --recursive <project url>
 
+# List Submodules in Git
+git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
+# Set url 
+git submodule set-url <path> <newurl>
 
+# Delete submodule
+git submodule deinit <submodule_directory>
+git rm <submodule_directory>
+rm -rf .git/modules/<submodule_directory>
+git commit -m"Removed Submodule"
+git push
 ```
