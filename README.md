@@ -36,6 +36,15 @@ Creating and connecting to a virtual machine (VM) via the Visual Studio Code Rem
 ## skaffold
 [Skaffold](https://skaffold.dev/docs/quickstart/) handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most: writing code.
 ```sh
+# For Linux x86_64 (amd64)
+curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/v2.0.0/skaffold-linux-amd64 && \
+sudo install skaffold /usr/local/bin/
+
+#minikube start
+minikube start --profile custom
+skaffold config set --global local-cluster true
+eval $(minikube -p custom docker-env)
+
 skaffold init --skip-build
 skaffold dev
 # skaffold run
