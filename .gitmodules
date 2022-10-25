@@ -1,3 +1,0 @@
-[submodule "auth"]
-	path = auth
-	url = git@github.com:mehradi-github/microservices-ticketing-auth.git
