@@ -49,4 +49,7 @@ eval $(minikube -p custom docker-env)
 skaffold init --skip-build
 skaffold dev
 # skaffold run --tail
+
+minikube ssh
+curl -i <Cluster-IP>:<Port>
 ```
