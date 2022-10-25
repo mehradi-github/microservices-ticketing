@@ -9,7 +9,7 @@ build:
   local:
     push: false
   artifacts:
-    - image: mehradi/microservices-ticketing-auth:0.0.1
+    - image: mehradi/microservices-ticketing-auth
       context: auth
       docker:
         dockerfile: Dockerfile
