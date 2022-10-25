@@ -13,7 +13,8 @@ git submodule add https://github.com/<user>/microservices-ticketing-auth auth
 git submodule update --init --recursive
 # Clone command to ensure you download everything, including any submodules
 git clone --recursive <project url>
-
+# update the submodule to the latest remote commit.
+git submodule update --remote --merge
 # List Submodules in Git
 git config --file .gitmodules --get-regexp path | awk '{ print $2 }'
 # Set url 
