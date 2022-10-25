@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: auth
-        image: mehradi/microservices-ticketing-auth:latest
+        image: mehradi/microservices-ticketing-auth:0.0.1
         resources:
           limits:
             memory: "128Mi"

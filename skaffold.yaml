@@ -2,15 +2,14 @@ apiVersion: skaffold/v3
 kind: Config
 metadata:
   name: microservices-ticketing
-deploy: 
-  kubectl:    
-    manifests:
-     - infra/k8s/*
+manifests:
+      rawYaml:
+       - ./infra/k8s/*
 build:
   local:
     push: false
   artifacts:
-    - image: mehradi//microservices-ticketing-auth
+    - image: mehradi/microservices-ticketing-auth:0.0.1
       context: auth
       docker:
         dockerfile: Dockerfile
