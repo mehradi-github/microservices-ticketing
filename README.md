@@ -62,4 +62,11 @@ minikube addons enable ingress
 
 vi /etc/hosts
 # 127.0.0.1 ticketing.dev
+
+curl --location --request POST 'http://<Host>:3000/api/users/singup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email":"sdfsdfsdf@sdfsd.dfd",
+    "password":"sdfsdfsdf"
+}'
 ```
