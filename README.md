@@ -59,4 +59,7 @@ curl -i <Cluster-IP>:<Port>
 [ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/#minikube) is an Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer.
 ```sh
 minikube addons enable ingress
+
+vi /etc/hosts
+# 127.0.0.1 ticketing.dev
 ```
