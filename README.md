@@ -3,6 +3,7 @@
   - [Adding a Submodule](#adding-a-submodule)
   - [Remote development over SSH](#remote-development-over-ssh)
   - [skaffold](#skaffold)
+  - [Ingress NGINX Controller(minikube)](#ingress-nginx-controllerminikube)
   
 ## Adding a Submodule
 
@@ -52,4 +53,10 @@ skaffold dev
 
 minikube ssh
 curl -i <Cluster-IP>:<Port>
+```
+
+## Ingress NGINX Controller(minikube)
+[ingress-nginx](https://kubernetes.github.io/ingress-nginx/deploy/#minikube) is an Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer.
+```sh
+minikube addons enable ingress
 ```
