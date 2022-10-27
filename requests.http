@@ -24,6 +24,12 @@ content-type: application/json
 #     "password":"sdfsdfsdf"
 # }'
 
+# curl -v -c cookie.txt -L -X POST 'http://ticketing.dev/api/users/signin' \
+# -H 'Content-Type: application/json' \
+# -d '{
+#     "email":"sdfsdfsdf@sdfsd.dfd",
+#     "password":"sdfsdfsdf"
+# }'
 
 POST http://ticketing.dev/api/users/signin
 content-type: application/json
