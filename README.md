@@ -91,4 +91,5 @@ kubectl delete secret db-user-pass
   
 ```
 ### jsonpath
+[JSONPath](https://jsonpath.com/) is a query language for JSON, similar to XPath for XML. It allows you to select and extract data from a JSON document. You use a JSONPath expression to traverse the path to an element in the JSON structure.
 <img src="./public/assets/images/jsonpath.jpeg" alt="jsonpath" width="250"/>
