@@ -33,7 +33,8 @@ git push
 Creating and connecting to a virtual machine (VM) via the Visual Studio Code Remote - [SSH extension](https://code.visualstudio.com/docs/remote/ssh-tutorial). 
 ```sh
 # sudo systemctl restart sshd.service
-# ssh -i C:\Users\Developer/.ssh/id_rsa <USER>@<><IP>
+# connect from windows to linux via ssh
+# ssh -i C:\Users\Developer/.ssh/id_rsa <USER>@<IP>
 ```
 
 ## skaffold
