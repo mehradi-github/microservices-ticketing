@@ -1,4 +1,31 @@
+# curl --location --request POST 'http://ticketing.dev/api/users/singup' \
+# --header 'Content-Type: application/json' \
+# --data-raw '{
+#     "email":"sdfsdfsdf@sdfsd.dfd",
+#     "password":"sdfsdfsdf"
+# }'
+
+
 POST http://ticketing.dev/api/users/signup
+content-type: application/json
+
+{
+  "email": "test50@test.com",
+  "password": "12345"
+}
+
+
+# Signin
+
+# curl --location --request POST 'http://ticketing.dev/api/users/signin' \
+# --header 'Content-Type: application/json' \
+# --data-raw '{
+#     "email":"sdfsdfsdf@sdfsd.dfd",
+#     "password":"sdfsdfsdf"
+# }'
+
+
+POST http://ticketing.dev/api/users/signin
 content-type: application/json
 
 {
