@@ -5,6 +5,7 @@
   - [skaffold](#skaffold)
   - [Ingress NGINX Controller(minikube)](#ingress-nginx-controllerminikube)
   - [Managing Secrets using kubectl](#managing-secrets-using-kubectl)
+    - [jsonpath](#jsonpath)
   
 ## Adding a Submodule
 
@@ -89,3 +90,5 @@ kubectl get secret db-user-pass -o jsonpath='{.data.password}' | base64 --decode
 kubectl delete secret db-user-pass
   
 ```
+### jsonpath
+<img src="./public/assets/images/jsonpath.jpeg" alt="jsonpath" width="250"/>
