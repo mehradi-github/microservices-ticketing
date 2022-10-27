@@ -4,6 +4,7 @@
   - [Remote development over SSH](#remote-development-over-ssh)
   - [skaffold](#skaffold)
   - [Ingress NGINX Controller(minikube)](#ingress-nginx-controllerminikube)
+  - [Managing Secrets using kubectl](#managing-secrets-using-kubectl)
   
 ## Adding a Submodule
 
@@ -69,4 +70,21 @@ curl --location --request POST 'http://<Host>:3000/api/users/singup' \
     "email":"sdfsdfsdf@sdfsd.dfd",
     "password":"sdfsdfsdf"
 }'
+```
+
+## Managing Secrets using kubectl
+```sh 
+echo -n '1f2d1e2e67df' > ./password.txt
+
+# The default key name is the filename. You can optionally set the key name
+kubectl create secret generic db-user-pass \
+  --from-literal=username='admin' \
+  --from-file=password=./password.txt
+
+kubectl get secrets
+kubectl describe secrets/db-user-pass
+
+kubectl get secret db-user-pass -o jsonpath='{.data.password}' | base64 --decode
+kubectl delete secret db-user-pass
+  
 ```
