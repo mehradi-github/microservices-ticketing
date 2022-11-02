@@ -1,4 +1,6 @@
-# Microservices with Node JS and React
+# Microservices with Skaffold, Kubernetes, Docker
+Microservices with Node JS and React(provides services for buyers and sellers of tickets for events)
+
 - [Microservices with Node JS and React](#microservices-with-node-js-and-react)
   - [Adding a Submodule](#adding-a-submodule)
   - [Remote development over SSH](#remote-development-over-ssh)
